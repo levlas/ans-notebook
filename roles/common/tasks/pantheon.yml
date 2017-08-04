@@ -1,4 +1,5 @@
 ---
+become: true
 
   - name: Add ElementaryOS PPA
     apt_repository: repo='ppa:elementary-os/stable'
