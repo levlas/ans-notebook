@@ -6,6 +6,9 @@
     - vim
     - curl
     # ...
+    
+- name: install a minimal Ubuntu desktop before Pantheon
+  apt: name="ubuntu-desktop" install-recommends=no state=present
 
 - include: mono.yml
 - include: pantheon.yml
