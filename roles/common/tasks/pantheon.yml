@@ -1,9 +1,6 @@
----
-become: true
-
-  - name: Add ElementaryOS PPA
-    apt_repository: repo='ppa:elementary-os/stable'
-  - name: Update the apt cache
-    apt: update_cache=yes cache_valid_time=3600
-  - name: Install Pantheon
-    apt: name=elementary-desktop state=installed
+- name: Add ElementaryOS PPA
+  apt_repository: repo='ppa:elementary-os/stable'
+- name: Update the apt cache
+  apt: update_cache=yes cache_valid_time=3600
+- name: Install Pantheon
+  apt: name=elementary-desktop state=installed
